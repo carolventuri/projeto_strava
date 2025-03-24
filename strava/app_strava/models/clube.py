@@ -25,7 +25,7 @@ class Clube(BaseModel):
         verbose_name="País",
     )
     tipo_esporte = models.CharField(
-        max_length=5, null=False, blank=False,
+        max_length=20, null=False, blank=False,
         choices=TipoEsporte, default=0.0,
         help_text="Selecione o esporte",
         verbose_name="Esporte"

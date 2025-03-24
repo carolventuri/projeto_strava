@@ -24,7 +24,7 @@ class Atividade(BaseModel):
         verbose_name="Data",
     )
     tipo_esporte = models.CharField(
-        max_length=5, null=False, blank=False,
+        max_length=20, null=False, blank=False,
         choices=TipoEsporte, default="",
         help_text="Selecione o Esporte",
         verbose_name="Esporte",
